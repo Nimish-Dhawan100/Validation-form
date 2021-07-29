@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Form Validation</title>
+</head>
+
+<body>
+  <div class="container">
+    <h4>Enter your details to validate</h4>
+    <section>
+      <div class="form-group">
+        <label for="Username">Username</label>
+        <input autocomplete="off" type="text" class="form-control" id="Username" aria-describedby="text"
+          placeholder="Enter Name" />
+        <small id="UsernameError" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <label for="Email">Email address</label>
+        <input autocomplete="off" type="email" class="form-control" id="Email" aria-describedby="emailHelp"
+          placeholder="Enter email" />
+        <small id="EmailError" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <label for="Phone">Enter Phone Number</label>
+        <input autocomplete="off" type="text" class="form-control" id="Phone" aria-describedby="text"
+          placeholder="Enter Phone Number" />
+        <small id="PhoneError" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <label for="Password">Password</label>
+        <input type="password" class="form-control" id="Password" placeholder="Password" />
+        <small id="PasswordError" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <label for="ConfirmPassword">Confirm Password</label>
+        <input type="password" class="form-control" id="ConfirmPassword" placeholder="Password" />
+        <small id="ConfirmPasswordError" class="form-text text-muted"></small>
+      </div>
+      <button type="submit" class="btn btn-primary" onclick="Validation()">
+        Submit
+      </button>
+      <button type="submit" class="btn btn-primary clear" onclick="resetForm()" id="reset">
+        Try Again
+      </button>
+      <small id="SubmitError" class="form-text text-muted"></small>
+    </section>
+  </div>
+
+  <script src="sheet.js"></script>
+</body>
+
+</html>
